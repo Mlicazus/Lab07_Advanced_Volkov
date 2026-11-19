@@ -69,26 +69,70 @@
 //     public int Armor;
 // }
 
-// Шаг 5. Необязательные параметры и именованные аргументы
+// // Шаг 5. Необязательные параметры и именованные аргументы
 
-void PrintBox(string name, int level, int speed = 1, string race = "человек")
-{
-    Console.WriteLine($"Имя: {name}");
-    Console.WriteLine($"Уровень: {level}");
-    Console.WriteLine($"Скорость: {speed}");
-    Console.WriteLine($"Раса: {race}");
-}
-System.Console.WriteLine();
-PrintBox("Mlicazus", 15);
-System.Console.WriteLine();
-PrintBox("Mlicazus", 15, race: "эльф");
-System.Console.WriteLine();
-PrintBox(speed: 2, name: "Mlicazus", race: "эльф", level: 15);
+// void PrintBox(string name, int level, int speed = 1, string race = "человек")
+// {
+//     Console.WriteLine($"Имя: {name}");
+//     Console.WriteLine($"Уровень: {level}");
+//     Console.WriteLine($"Скорость: {speed}");
+//     Console.WriteLine($"Раса: {race}");
+// }
+// System.Console.WriteLine();
+// PrintBox("Mlicazus", 15);
+// System.Console.WriteLine();
+// PrintBox("Mlicazus", 15, race: "эльф");
+// System.Console.WriteLine();
+// PrintBox(speed: 2, name: "Mlicazus", race: "эльф", level: 15);
 
 
 // Итоговая задача. Проектирование системы персонажа
 
+// void firstMethod(ref int health)
+// {
+//     health *= 10;
+// }
+// int health = 10;
+// firstMethod(ref health);
+// System.Console.WriteLine();
+// System.Console.WriteLine($"Измененное здоровье: {health}");
 
+// int secondMethod(int DM, out int damage)
+// {
+//     damage = DM;
+//     return damage;
+// }
+// System.Console.WriteLine();
+// int DM = 5;
+// System.Console.WriteLine($"Итоговый урон вернувшийся с помощью return: {secondMethod(DM, out int damage)}");
+
+// System.Console.WriteLine();
+// void fourthMethod(int characteristics, bool description, string content = "подробное")
+// {
+//     System.Console.WriteLine($"Кол-во характеристик: {characteristics}");
+//     System.Console.WriteLine($"Нужно ли описание: {description}");
+//     System.Console.WriteLine($"Вид описание (если оно есть): {content}");
+// }
+// fourthMethod(5, content: "краткое", description: true);
+
+// Characteristic hero = new Characteristic();
+// hero.strength = 2;
+// hero.intelligence = 10;
+// hero.agility = 3;
+// System.Console.WriteLine();
+// thirdMethod(hero);
+// void thirdMethod(in Characteristic stats)
+// {
+//     System.Console.WriteLine($"Сила: {stats.strength}");
+//     System.Console.WriteLine($"Разум: {stats.intelligence}");
+//     System.Console.WriteLine($"Ловкость: {stats.agility}");
+// }
+// struct Characteristic
+// {
+//     public int strength;
+//     public int intelligence;
+//     public int agility;
+// }
 
 // Самостоятельное задание (Базовое)
 
