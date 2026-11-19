@@ -69,44 +69,26 @@
 //     public int Armor;
 // }
 
-// // Шаг 5. Необязательные параметры и именованные аргументы
+// Шаг 5. Необязательные параметры и именованные аргументы
 
-// MainStats Hero_MainStats = new MainStats();
-// System.Console.WriteLine();
-// System.Console.Write("Введите имя героя: ");
-// Hero_MainStats.Name = System.Console.ReadLine();
-// System.Console.Write("Введите уровень героя: ");
-// Hero_MainStats.Level = int.Parse(System.Console.ReadLine());
-// OptionalStats Hero_OptionalStats = new OptionalStats();
-// System.Console.Write("Хотите внести дополнительные хар-ки (true - да, false - нет): ");
-// bool IsOptionalStats = bool.Parse(System.Console.ReadLine());
-// if (IsOptionalStats)
-// {
-//     System.Console.Write("Введите расу героя: ");
-//     Hero_OptionalStats.Race = System.Console.ReadLine();
-//     System.Console.Write("Введите лучший атрибут героя: ");
-//     Hero_OptionalStats.BestAttribute = System.Console.ReadLine();
-// }
-// System.Console.WriteLine();
-// void PrintStats(in MainStats stats1, in OptionalStats stats2)
-// {
-//     System.Console.WriteLine($"Имя: {stats1.Name}");
-//     System.Console.WriteLine($"Уровень: {stats1.Level}");
-//     if (IsOptionalStats)
-//     {
-//         System.Console.WriteLine($"Раса: {stats2.Race}");
-//         System.Console.WriteLine($"Лучший атрибут: {stats2.BestAttribute}");
-//     }
-// }
-// PrintStats(Hero_MainStats, Hero_OptionalStats);
-// struct MainStats
-// {
-//     public string Name;
-//     public int Level;
-// }
-// struct OptionalStats
-// {
-//     public string Race;
-//     public string BestAttribute;
-// }
+void PrintBox(string name, int level, int speed = 1, string race = "человек")
+{
+    Console.WriteLine($"Имя: {name}");
+    Console.WriteLine($"Уровень: {level}");
+    Console.WriteLine($"Скорость: {speed}");
+    Console.WriteLine($"Раса: {race}");
+}
+System.Console.WriteLine();
+PrintBox("Mlicazus", 15);
+System.Console.WriteLine();
+PrintBox("Mlicazus", 15, race: "эльф");
+System.Console.WriteLine();
+PrintBox(speed: 2, name: "Mlicazus", race: "эльф", level: 15);
+
+
+// Итоговая задача. Проектирование системы персонажа
+
+
+
+// Самостоятельное задание (Базовое)
 
