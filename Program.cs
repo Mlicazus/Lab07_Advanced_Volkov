@@ -86,7 +86,7 @@
 // PrintBox(speed: 2, name: "Mlicazus", race: "эльф", level: 15);
 
 
-// Итоговая задача. Проектирование системы персонажа
+// // Итоговая задача. Проектирование системы персонажа
 
 // void firstMethod(ref int health)
 // {
@@ -134,5 +134,30 @@
 //     public int agility;
 // }
 
-// Самостоятельное задание (Базовое)
+// // Самостоятельное задание (Базовое)
 
+// void Swap(ref string a, ref string b, ref string c)
+// {
+//     string ref_a = a;
+//     string ref_b = b;
+//     string ref_c = c;
+//     a = ref_c;
+//     b = ref_a;
+//     c = ref_b;
+// }
+// void PrintList(string a, string b, string c)
+// {
+//     System.Console.WriteLine($"1. {a}");
+//     System.Console.WriteLine($"2. {b}");
+//     System.Console.WriteLine($"3. {c}");
+// }
+// string a = "Телефон";
+// string b = "Чипсы Lays";
+// string c = "Комплектующие для ПК";
+// System.Console.WriteLine();
+// System.Console.WriteLine("Список избранного до изменения: ");
+// PrintList(a, b, c);
+// System.Console.WriteLine();
+// Swap(ref a, ref b, ref c);
+// System.Console.WriteLine("Список избранного после изменения: ");
+// PrintList(a, b, c);
